@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root{
+--orange: hsl(25, 97%, 53%);
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--dark-blue: hsl(213, 19%, 18%);
+--very-dark-blue: hsl(216, 12%, 8%);
+--medium-grey: hsl(216, 12%, 54%);
+}
+h1,p{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+  background: var(--very-dark-blue);
+  height: 100vh;
+}
+
+.conteiner{
+background-color: var(--dark-blue);
+max-width: 320px;
+display: flex;
+flex-direction: column;
+padding: 2rem;
+border-radius: 2.2rem;
+justify-content: space-around;
+gap: 30px;
+}
+
+.conteiner img{
+  width: 14px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color:  hsl(220, 7%, 24%);
+}
+.conteiner h1, .thank-you h1{
+  color: var(--white);
+}
+
+.conteiner p{
+  color: var(--light-grey);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.avalie{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.hate{
+  display: flex;
+  justify-content: space-around;
+}
+
+.active{
+  background:var(--light-grey);
+  color: var(--white);
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  }
+
+  .escala{
+    background-color: hsl(220, 7%, 24%); 
+    color:var(--light-grey);
+  }
+
+  .hate span:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .enviar{
+    background-color: var(--orange);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--white);
+    font-weight: 400;
+  }
+  .enviar:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+
+
+.thank-you{
+  background-color: var(--dark-blue);
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 2.2rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  display: none;
+
+}
+
+.thank-you img{
+  width: 140px
+}
+
+.sua-selecao{
+  color: var(--orange);
+  background-color:hsl(220, 7%, 24%); 
+  padding: 5px 18px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.thank-you section{
+  text-align: center;
+}
+.thank-you section p{
+  color: var(--light-grey);
+}
+
+
+.attribution{
+  display: none;
+}
+
